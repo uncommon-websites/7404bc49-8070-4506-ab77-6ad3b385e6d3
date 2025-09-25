@@ -6,16 +6,23 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CenteredTextOnlyHero from "$lib/components/layout/hero-sections/CenteredTextOnlyHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+<CenteredTextOnlyHero
+	title="Transform fleeting moments into lasting memories"
+	subtitle="Capture the essence of your day in mindful 9-second films. No pressure, no audience, just authentic moments preserved for reflection."
+	imageSrc="/generated/image-a-cozy-coffee-shop-interior-in-the-early.webp"
 />
-<LogoScroller label="" generating />
+<LogoScroller 
+	label="Trusted by mindful companies"
+	logoUrls={[
+		'https://cdn.brandfetch.io/headspace.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/calm.com/w/400/h/400/logo', 
+		'https://cdn.brandfetch.io/notion.so/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/patagonia.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
